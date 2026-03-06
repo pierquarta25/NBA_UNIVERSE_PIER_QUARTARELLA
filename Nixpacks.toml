@@ -2,7 +2,7 @@
 nixPkgs = ["php8.4", "php84Extensions.pdo", "php84Extensions.pdo_mysql", "php84Extensions.mbstring", "php84Extensions.xml", "php84Extensions.curl", "php84Extensions.zip", "php84Extensions.gd", "composer"]
 
 [phases.install]
-cmds = ["composer install --no-dev --optimize-autoloader"]
+cmds = ["composer install --optimize-autoloader --no-scripts --no-interaction"]
 
 [phases.build]
 cmds = [
